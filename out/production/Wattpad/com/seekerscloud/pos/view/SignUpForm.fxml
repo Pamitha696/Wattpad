@@ -11,8 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seekerscloud.pos.controller.SignUpFormController">
+<AnchorPane fx:id="signUpFormContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seekerscloud.pos.controller.SignUpFormController">
    <children>
       <AnchorPane layoutX="10.0" layoutY="11.0" prefHeight="561.0" prefWidth="514.0" style="-fx-background-color: C4DBF5;">
          <children>
@@ -28,17 +27,17 @@
                         <Font name="Gadugi" size="18.0" />
                      </font>
                   </Label>
-                  <JFXTextField labelFloat="true" layoutX="79.0" layoutY="83.0" prefHeight="25.0" prefWidth="257.0" promptText="email">
+                  <JFXTextField fx:id="txtEmail" labelFloat="true" layoutX="79.0" layoutY="83.0" prefHeight="25.0" prefWidth="257.0" promptText="email">
                      <font>
                         <Font name="System Bold" size="15.0" />
                      </font>
                   </JFXTextField>
-                  <JFXPasswordField labelFloat="true" layoutX="74.0" layoutY="240.0" prefHeight="25.0" prefWidth="257.0" promptText="Password">
+                  <JFXPasswordField fx:id="txtPassword" labelFloat="true" layoutX="74.0" layoutY="240.0" prefHeight="25.0" prefWidth="257.0" promptText="Password">
                      <font>
                         <Font name="System Bold" size="15.0" />
                      </font>
                   </JFXPasswordField>
-                  <JFXButton buttonType="RAISED" layoutX="79.0" layoutY="360.0" prefHeight="35.0" prefWidth="257.0" style="-fx-background-color: #3498DB;" text="Sign Up" textFill="#fcfafa">
+                  <JFXButton buttonType="RAISED" layoutX="79.0" layoutY="360.0" onAction="#signUpOnAction" prefHeight="35.0" prefWidth="257.0" style="-fx-background-color: #3498DB;" text="Sign Up" textFill="#fcfafa">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
@@ -49,7 +48,7 @@
                   <Separator layoutX="81.0" layoutY="422.0" prefHeight="3.0" prefWidth="105.0" />
                   <Separator layoutX="224.0" layoutY="421.0" prefHeight="3.0" prefWidth="105.0" />
                   <Label layoutX="194.0" layoutY="416.0" text="OR" />
-                  <JFXButton buttonType="RAISED" layoutX="79.0" layoutY="454.0" prefHeight="35.0" prefWidth="257.0" style="-fx-background-color: #34495E;" text="Already have an Account" textFill="#fcfafa">
+                  <JFXButton buttonType="RAISED" layoutX="79.0" layoutY="454.0" onAction="#alreadyHaveAnAccountOnAction" prefHeight="35.0" prefWidth="257.0" style="-fx-background-color: #34495E;" text="Already have an Account" textFill="#fcfafa">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
@@ -57,17 +56,17 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXButton>
-                  <JFXTextField labelFloat="true" layoutX="76.0" layoutY="137.0" prefHeight="25.0" prefWidth="257.0" promptText="Full Name">
+                  <JFXTextField fx:id="txtFullName" labelFloat="true" layoutX="76.0" layoutY="137.0" prefHeight="25.0" prefWidth="257.0" promptText="Full Name">
                      <font>
                         <Font name="System Bold" size="15.0" />
                      </font>
                   </JFXTextField>
-                  <JFXPasswordField labelFloat="true" layoutX="74.0" layoutY="189.0" prefHeight="25.0" prefWidth="257.0" promptText="Contact">
+                  <JFXPasswordField fx:id="txtContact" labelFloat="true" layoutX="74.0" layoutY="189.0" prefHeight="25.0" prefWidth="257.0" promptText="Contact">
                      <font>
                         <Font name="System Bold" size="15.0" />
                      </font>
                   </JFXPasswordField>
-                  <JFXPasswordField labelFloat="true" layoutX="74.0" layoutY="302.0" prefHeight="25.0" prefWidth="257.0" promptText="Re -Password">
+                  <JFXPasswordField fx:id="txtRePassword" labelFloat="true" layoutX="74.0" layoutY="302.0" prefHeight="25.0" prefWidth="257.0" promptText="Re -Password">
                      <font>
                         <Font name="System Bold" size="15.0" />
                      </font>
