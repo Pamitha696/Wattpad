@@ -11,7 +11,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="loginFormContext" prefHeight="561.0" prefWidth="1028.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seekerscloud.pos.controller.LoginFormController">
    <children>
       <AnchorPane layoutY="1.0" prefHeight="561.0" prefWidth="514.0" style="-fx-background-color: C4DBF5;">
@@ -28,17 +27,17 @@
                         <Font name="Gadugi" size="18.0" />
                      </font>
                   </Label>
-                  <JFXTextField labelFloat="true" layoutX="79.0" layoutY="122.0" prefHeight="25.0" prefWidth="257.0" promptText="User Name">
+                  <JFXTextField fx:id="txtUserName" labelFloat="true" layoutX="79.0" layoutY="122.0" prefHeight="25.0" prefWidth="257.0" promptText="User Name">
                      <font>
                         <Font name="System Bold" size="15.0" />
                      </font>
                   </JFXTextField>
-                  <JFXPasswordField labelFloat="true" layoutX="79.0" layoutY="177.0" prefHeight="25.0" prefWidth="257.0" promptText="Password">
+                  <JFXPasswordField fx:id="txtPassword" labelFloat="true" layoutX="79.0" layoutY="177.0" prefHeight="25.0" prefWidth="257.0" promptText="Password">
                      <font>
                         <Font name="System Bold" size="15.0" />
                      </font>
                   </JFXPasswordField>
-                  <JFXButton buttonType="RAISED" layoutX="79.0" layoutY="234.0" prefHeight="35.0" prefWidth="257.0" style="-fx-background-color: #3498DB;" text="Login" textFill="#fcfafa">
+                  <JFXButton buttonType="RAISED" layoutX="79.0" layoutY="234.0" onAction="#loginOnAction" prefHeight="35.0" prefWidth="257.0" style="-fx-background-color: #3498DB;" text="Login" textFill="#fcfafa">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
