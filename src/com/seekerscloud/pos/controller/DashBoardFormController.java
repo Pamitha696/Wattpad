@@ -56,17 +56,20 @@ public class DashBoardFormController {
         setUi("CustomerForm","Customer Form");
     }
 
-    public void openOrderDetailsOnAction(MouseEvent mouseEvent) {
+    public void openOrderDetailsOnAction(MouseEvent mouseEvent) throws IOException {
+        setUi("OrdersForm", "Order Form");
     }
 
-    public void openPlaceOrderFormOnAction(MouseEvent mouseEvent) {
+    public void openPlaceOrderFormOnAction(MouseEvent mouseEvent) throws IOException {
+        setUi("PlaceOrderForm", "Place Order Form");
     }
 
     public void openProductManagementOnAction(MouseEvent mouseEvent) throws IOException {
-        setUi("ProductForm", "Dashboard");
+        setUi("ProductForm", "Product Form");
     }
 
-    public void openStatisticsOnAction(MouseEvent mouseEvent) {
+    public void openStatisticsOnAction(MouseEvent mouseEvent) throws IOException {
+        setUi("StatisticsForm", "Product Form");
     }
 
     private void setUi(String location,String title) throws IOException {
